@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd35a26d-e019-4945-9196-06644f15134e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/service/event.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/service/event.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionDesAbsences/Front/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionDesAbsences/Front/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionDesAbsences/Front/README.md" beforeDir="false" />
@@ -67,6 +67,8 @@
       <change beforePath="$PROJECT_DIR$/../GestionDesAbsences/Front/tsconfig.spec.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionDesAbsences/Front/tslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionEtudiant" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Main.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tourisme app/Tourism_Server" beforeDir="false" afterPath="$PROJECT_DIR$/../Tourisme app/Tourism_Server" afterDir="false" />
@@ -460,7 +462,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1VZHFtab6OxM2fsUjWM6mucyEDM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -474,6 +483,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -538,7 +548,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577453597547</updated>
       <workItem from="1577453604811" duration="1909000" />
-      <workItem from="1577531899181" duration="9808000" />
+      <workItem from="1577531899181" duration="10124000" />
     </task>
     <servers />
   </component>
