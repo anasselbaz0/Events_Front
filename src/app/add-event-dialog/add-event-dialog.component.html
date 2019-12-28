@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row title">
+        <h1 mat-dialog-title>Ajouter un Evenement</h1>
+    </div>
+    <form [formGroup]="addEventForm" (ngSubmit)="onSubmit()">
+        <div mat-dialog-content class="row m-3">
+            <mat-form-field appearance="fill" class="w-100 mb-2">
+                <label>
+                    <input matInput placeholder="Titre de l'Evenement" name="title" formControlName="title">
+                </label>
+            </mat-form-field>
+        </div>
+        <div mat-dialog-actions class="row">
+            <button mat-button mat-dialog-close (click)="closeDialog()">Annuler</button>
+            <button mat-button mat-dialog-close cdkFocusInitial mat-raised-button color="primary" type="submit">Ajouter</button>
+        </div>
+    </form>
+</div>

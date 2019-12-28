@@ -1,0 +1,36 @@
+<div id="login">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="box col-md-6">
+        <div class="title">Login</div>
+        <div class="content">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="fill" class="w-100 mb-2">
+              <label>
+                <input matInput placeholder="Enter your username" name="username" formControlName="username">
+              </label>
+              <mat-hint>Username</mat-hint>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-100 mb-2">
+              <label>
+                <input matInput placeholder="Enter your password" name="password" formControlName="password">
+              </label>
+              <mat-hint>At least 8 characters</mat-hint>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="w-100 mb-4">
+              <mat-label>Role</mat-label>
+              <mat-select [(value)]="role">
+                <mat-option value="Administrateur">Administrateur</mat-option>
+                <mat-option value="Etudiant">Etudiant</mat-option>
+                <mat-option value="Professeur">Professeur</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <div class="d-flex justify-content-center">
+              <button mat-raised-button color="primary" type="submit" [disabled]='!loginForm.valid'>LOGIN</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
