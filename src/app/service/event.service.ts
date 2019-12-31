@@ -1,24 +1,31 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import {Evenement} from '../model/Evenement';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EventService {
-
+  
   constructor(private http: HttpClient) { }
 
-  piURL: string = 'http://localhost:8080/';
+  apiURL: string = 'http://localhost:8080/';
+  events: Evenement[];
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json'
+    })
+  };
+
+  getAll(): Observable<Evenement[]> {
+    return this.http.get<Evenement[]>(this.apiURL + "evenements", this.httpOptions);
+  }
 
   addEvent(eventToAdd: Evenement) {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/json'
-      })
-    };
-    // @ts-ignore
-    return this.http.get(this.apiURL + 'events/add', eventToAdd, httpOptions);
+    return this.http.post(this.apiURL + 'evenements/add', eventToAdd, this.httpOptions);
   }
+
+
 
 }

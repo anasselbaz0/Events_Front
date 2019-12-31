@@ -26,6 +26,7 @@ import { EvenementsComponent } from './evenements/evenements.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { AddEventDialogComponent } from './add-event-dialog/add-event-dialog.component';
 import {MatDialogModule} from '@angular/material';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import {MatDialogModule} from '@angular/material';
     MatToolbarModule,
     FullCalendarModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule
   ],
   entryComponents: [
     AddEventDialogComponent

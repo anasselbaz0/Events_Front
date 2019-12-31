@@ -27,8 +27,10 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     const u: string = this.loginForm.controls['username'].value;
     const p: string = this.loginForm.controls['password'].value;
-    // @ts-ignore
-    if ( this.authService.login(new User(u, p, this.role)) ) {
+    const user: User = new User(u, p, this.role.toLocaleUpperCase());
+    const condition = this.authService.login(user);
+    console.log(condition);
+    if ( condition) {
       console.log('Login successful');
       this.router.navigateByUrl('/home');
     } else {
