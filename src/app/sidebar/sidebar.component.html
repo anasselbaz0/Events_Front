@@ -1,6 +1,8 @@
 <div class="container">
-  <div class="p-3">
-    <a routerLink="/salles"><button class="w-100 mb-3" mat-raised-button>Salles</button></a>
-    <a routerLink="/events"><button class="w-100 mb-3" mat-raised-button>Evenements</button></a>
+  <div class="p-3 pt-5">
+        <a routerLink="/salles"><button class="w-100 mb-3" mat-raised-button>Salles</button></a>
+        <a routerLink="/events"><button class="w-100 mb-3" mat-raised-button>Evenements</button></a>
+        <a routerLink="/reservations"><button class="w-100 mb-3" mat-raised-button>Reservations</button></a>
+        <a *ngIf="this.role === 'ADMIN'" routerLink="/users"><button class="w-100 mb-3" mat-raised-button>Utilisateurs</button></a>
   </div>
 </div>

@@ -3,8 +3,37 @@
     <div class="col-3 p-0 m-0">
       <app-sidebar></app-sidebar>
     </div>
-    <div class="col-3 p-0 m-0">
-      s
+    <div class="col-9 p-3 m-0">
+
+        <h1 class="title">
+            salles
+        </h1>
+
+      <div class="row w-100">
+        <div *ngFor="let s of salles" class="col-md-3 p-0 myEvent">
+          <mat-card class="m-3">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title> {{ s.code }} </mat-card-title>
+              <mat-card-subtitle>Salle</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="text-center">
+                <img mat-card-image src="assets/salle.png" style="width: 70%;">
+                <hr>
+                <div *ngIf="s.datesDeReservation">
+                    <p>Reservee pour :</p>
+                    <div *ngFor="let d of s.datesDeReservation">
+                        <span class="info">{{ add1hour(d).toLocaleDateString() }}</span>
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <h6>{{ s.type }}</h6>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

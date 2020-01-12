@@ -21,22 +21,42 @@ export class LoginComponent implements OnInit {
     password: new FormControl(''),
   });
   role: string;
+  authenticated: User;
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.authenticated = null;
+    sessionStorage.clear();
+  }
 
   onSubmit() {
-    const u: string = this.loginForm.controls['username'].value;
-    const p: string = this.loginForm.controls['password'].value;
+    const u: string = this.loginForm.controls.username.value;
+    const p: string = this.loginForm.controls.password.value;
     const user: User = new User(u, p, this.role.toLocaleUpperCase());
-    const condition = this.authService.login(user);
-    console.log(condition);
-    if ( condition) {
-      console.log('Login successful');
-      this.router.navigateByUrl('/home');
-    } else {
-      console.log('Login failed');
-      this.router.navigateByUrl('/');
-    }
+    this.authService.login(user).subscribe(result => {
+      this.authenticated = result;
+      if (this.authenticated !== null) {
+        sessionStorage.setItem('username', this.authenticated.username);
+        sessionStorage.setItem('password', this.authenticated.password);
+        sessionStorage.setItem('role', this.authenticated.role);
+        switch (this.authenticated.role) {
+          case 'ADMIN': {
+            this.router.navigateByUrl('/admin');
+            break;
+          }
+          case 'ETUDIANT': {
+            this.router.navigateByUrl('/etudiant');
+            break;
+          }
+          case 'PROFESSEUR': {
+            this.router.navigateByUrl('/prof');
+            break;
+          }
+        }
+      } else {
+        console.log('Login failed');
+        this.router.navigateByUrl('/');
+      }
+    });
   }
 
 

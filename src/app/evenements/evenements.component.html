@@ -4,28 +4,35 @@
       <app-sidebar></app-sidebar>
     </div>
     <div class="col-9 p-3 m-0">
-      
+
+        <h1 class="title">
+            evenements
+        </h1>
+
       <div class="row w-100">
-        <mat-card *ngFor="let event of events" class="col-md-3 m-4">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title> {{ event.titre }} </mat-card-title>
-            <mat-card-subtitle>Evenement</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="assets/event.png">
-          <mat-card-content>
-            
-          </mat-card-content>
-          <mat-card-actions class="d-flex bd-highlight">
-            <div class="mr-auto p-2 bd-highlight">
-              <img *ngIf="event.valid" class="img-responsive" src="assets/valide.png" style="width: 32px;">
-              <img *ngIf="!event.valid" class="img-responsive" src="assets/not-valide.png" style="width: 32px;">
-            </div>
-            <div class="p-2 bd-highlight">
-              <h6>{{ event.date.substring(0, 10) }}</h6>
-            </div>
-          </mat-card-actions>
-        </mat-card>
+        <div *ngFor="let e of events" class="col-md-3 p-0 myEvent">
+          <mat-card class="m-3">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title> {{ e.titre }} </mat-card-title>
+              <mat-card-subtitle>Evenement</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/event.png" style="height: 80px;">
+            <mat-card-content>
+
+            </mat-card-content>
+            <mat-card-actions class="d-flex bd-highlight">
+              <div class="mr-auto p-2 bd-highlight">
+                    <img *ngIf="e.valid" class="img-responsive" src="assets/valide.png" style="width: 32px;">
+                    <img *ngIf="!e.valid && this.role === 'ADMIN'" class="img-responsive" src="assets/not-valide.png" style="width: 32px;" (click)="valider(e)">
+                    <img *ngIf="!e.valid && this.role !== 'ADMIN'" class="img-responsive" src="assets/not-valide.png" style="width: 32px;">
+              </div>
+              <div class="p-2 bd-highlight">
+                <h6>{{ e.date.substring(0, 10) }}</h6>
+              </div>
+            </mat-card-actions>
+          </mat-card>
+        </div>
       </div>
 
     </div>

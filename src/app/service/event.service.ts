@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EventService {
-  
+
   constructor(private http: HttpClient) { }
 
-  apiURL: string = 'http://localhost:8080/';
+  apiURL = 'http://localhost:8080/';
   events: Evenement[];
   httpOptions = {
     headers: new HttpHeaders({
@@ -19,13 +19,27 @@ export class EventService {
   };
 
   getAll(): Observable<Evenement[]> {
-    return this.http.get<Evenement[]>(this.apiURL + "evenements", this.httpOptions);
+    return this.http.get<Evenement[]>(this.apiURL + 'evenements', this.httpOptions);
   }
 
-  addEvent(eventToAdd: Evenement) {
-    return this.http.post(this.apiURL + 'evenements/add', eventToAdd, this.httpOptions);
+
+  addEvent(eventToAdd: Evenement): Observable<Evenement> {
+    const yyyy = eventToAdd.date.getFullYear().toString();
+    const MM = (eventToAdd.date.getMonth() + 1).toString();
+    const dd = (eventToAdd.date.getDate() - 1).toString();
+    const x = yyyy + '-' + MM + '-' + dd + '@23:00:00.000+0000';
+    const e = {
+      titre: eventToAdd.title,
+      date: x,
+      isvalidated: eventToAdd.isvalidated
+    };
+    return this.http.post<Evenement>(this.apiURL + 'evenements/add', e, this.httpOptions);
   }
 
+  valider(event: Evenement): Observable<Evenement> {
+    console.log(event);
+    return this.http.post<Evenement>(this.apiURL + 'evenements/valider', event, this.httpOptions);
+  }
 
 
 }

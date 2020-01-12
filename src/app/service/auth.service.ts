@@ -10,21 +10,17 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  private apiURL = 'http://localhost:8080/';
-  private authUser: User = new User('', '', '');
+  apiURL = 'http://localhost:8080/';
+  authUser: User;
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json'
+    })
+  };
 
-  login(user: User): boolean {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/json'
-      })
-    };
-    // @ts-ignore
-    const out: Observable<User> = this.http.get<User>(this.apiURL + 'login', user, httpOptions)._subscribe((res) => {
-      this.authUser = res;
-    });
-    console.log(this.authUser);
-    return true;
+  login(user: User): Observable<User> {
+    console.log(user);
+    return this.http.post<User>(this.apiURL + 'login', user, this.httpOptions);
   }
 
 

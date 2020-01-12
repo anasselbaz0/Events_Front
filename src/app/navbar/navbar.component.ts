@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  title: string = 'Gestion des Salles & Organisation des Events';
+  title = 'Gestion des Salles & Organisation des Events';
+  username: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.username = sessionStorage.getItem('username');
   }
 
 }

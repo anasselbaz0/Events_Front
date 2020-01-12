@@ -27,6 +27,10 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { AddEventDialogComponent } from './add-event-dialog/add-event-dialog.component';
 import {MatDialogModule} from '@angular/material';
 import {MatTableModule} from '@angular/material/table';
+import { ReservationComponent } from './reservation/reservation.component';
+import { EspaceEtudiantComponent } from './espace-etudiant/espace-etudiant.component';
+import { EspaceProfesseurComponent } from './espace-professeur/espace-professeur.component';
+import { EspaceAdminComponent } from './espace-admin/espace-admin.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import {MatTableModule} from '@angular/material/table';
     HomeComponent,
     SallesComponent,
     EvenementsComponent,
-    AddEventDialogComponent
+    AddEventDialogComponent,
+    ReservationComponent,
+    EspaceEtudiantComponent,
+    EspaceProfesseurComponent,
+    EspaceAdminComponent
   ],
   imports: [
     BrowserModule,

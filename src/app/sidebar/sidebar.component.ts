@@ -9,7 +9,10 @@ export class SidebarComponent implements OnInit {
 
   constructor() { }
 
+  role:string;
+
   ngOnInit() {
+    this.role = sessionStorage.getItem('role');
   }
 
 }

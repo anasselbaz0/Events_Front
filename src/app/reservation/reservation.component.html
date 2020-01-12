@@ -1,0 +1,60 @@
+<script>
+    function displayResponse() {
+        document.getElementById('resp').style.display = 'block';
+    }
+</script>
+
+
+
+
+
+<div class="row">
+    <div class="col-3 p-0 m-0">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-9 p-3 m-0">
+
+        <h1 class="title">
+            Reservations
+        </h1>
+
+        <div class="container">
+            <form (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-5 m-0 p-3">
+                        <mat-form-field appearance="fill" class="w-100 mb-4">
+                            <mat-label>Evenement</mat-label>
+                            <mat-select [(value)]="event">
+                                <mat-option *ngFor="let e of events" [value]="e.titre">
+                                    {{e.titre}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-5 m-0 p-3">
+                        <mat-form-field appearance="fill" class="w-100 mb-4">
+                            <mat-label>Salle</mat-label>
+                            <mat-select [(value)]="salle">
+                                <mat-option *ngFor="let s of salles" [value]="s.code">
+                                    {{s.code}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-2 m-0 p-3">
+                        <div class="d-flex justify-content-center">
+                            <button mat-raised-button color="primary" type="submit" onclick="displayResponse()">RESERVER</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="response" id="resp" style="display: none">
+                Operation faite avec success !
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

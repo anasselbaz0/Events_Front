@@ -1,7 +1,7 @@
 export class Evenement {
-  title: string;
-  date: Date;
-  isvalidated: boolean;
+  public title: string;
+  public date: Date;
+  public isvalidated: boolean;
 
   constructor() {
     this.title = '';

@@ -2,6 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd35a26d-e019-4945-9196-06644f15134e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/espace-admin/espace-admin.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-admin/espace-admin.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-admin/espace-admin.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-admin/espace-admin.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-etudiant/espace-etudiant.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-etudiant/espace-etudiant.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-etudiant/espace-etudiant.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-etudiant/espace-etudiant.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-professeur/espace-professeur.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-professeur/espace-professeur.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-professeur/espace-professeur.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/espace-professeur/espace-professeur.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/model/Equipement.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/model/Reservation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/model/Salle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/reservation/reservation.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/reservation/reservation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/reservation/reservation.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/reservation/reservation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/service/salle.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/service/salle.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/TablePlus.dmg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/salle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/salle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GestionAbsence/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../GestionAbsence/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GestionAbsence/src/app/module-liste/module-liste.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../GestionAbsence/src/app/module-liste/module-liste.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionAbsences" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionDesAbsences/Front/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionDesAbsences/Front/.gitignore" beforeDir="false" />
@@ -67,10 +93,27 @@
       <change beforePath="$PROJECT_DIR$/../GestionDesAbsences/Front/tslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GestionEtudiant" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/add-event-dialog/add-event-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/add-event-dialog/add-event-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/calendar/calendar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/calendar/calendar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/evenements/evenements.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/evenements/evenements.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/evenements/evenements.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/evenements/evenements.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/evenements/evenements.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/evenements/evenements.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Evenement.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Evenement.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/salles/salles.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/salles/salles.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/salles/salles.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/salles/salles.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/service/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/service/event.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service/event.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Main.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tourisme app/Tourism_Server" beforeDir="false" afterPath="$PROJECT_DIR$/../Tourisme app/Tourism_Server" afterDir="false" />
@@ -463,6 +506,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -487,13 +537,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/model" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/node_modules/protractor" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/model" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (GestionSalles)" type="JavaScriptTestRunnerKarma">
@@ -552,6 +607,7 @@
       <workItem from="1577453604811" duration="1909000" />
       <workItem from="1577531899181" duration="15629000" />
       <workItem from="1577615171574" duration="1495000" />
+      <workItem from="1577888122879" duration="18668000" />
     </task>
     <servers />
   </component>
